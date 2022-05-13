@@ -1,0 +1,22 @@
+.ourMissionContainer {
+  height: 345px;
+  display: flex;
+  align-items: center;
+
+  .missionWrapper {
+    border: 2px solid var(--color_s);
+    position: relative;
+
+    .missionHeading {
+      background-color: #fff;
+      position: absolute;
+      top: 0px;
+      padding: 0px 22px;
+      transform: translateY(-50%);
+    }
+
+    .dark {
+      font-weight: 600;
+    }
+  }
+}

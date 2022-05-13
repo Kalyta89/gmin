@@ -1,0 +1,127 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "../fonts/fonts.css";
+* {
+  box-sizing: border-box;
+}
+body {
+  --color_p: #00556f;
+  --color_s: #c59425;
+  --color_s_2: #C38A30;
+  --color_t: "#606060";
+  font-size: 1.125rem;
+  font-family: "Lato", sans-serif;
+  @media (max-width: 767px) {
+    font-size: 0.825rem;
+  }
+}
+button {
+  &:focus {
+    outline: none !important;
+  }
+}
+.font-2xl {
+  font-size: 1.4375rem; //23px
+  letter-spacing: 0.46px;
+  line-height: 30px;
+
+  @media (max-width: 767px) {
+    font-size: 1.32625rem;
+  }
+}
+.font-xs {
+  font-size: 0.875rem; //14px
+  &:not(.no-light) {
+    font-weight: 400;
+  }
+}
+.font-smallest {
+  font-size: 0.8125rem; //13px
+  line-height: 18px;
+  letter-spacing: 0.63px;
+  font-weight: 400;
+}
+.font-table {
+  font-size: 0.875rem; //14px
+  line-height: 18px;
+  letter-spacing: 0.7px;
+}
+.font-table-small {
+  font-size: 0.625rem; //10px
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+p {
+  font-size: 1.125rem; //18px
+  line-height: 26px;
+  font-weight: 300;
+
+  &.slim {
+    line-height: 1.125rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 0.875rem;
+  }
+}
+h1 {
+  font-size: 3.25rem; //52px (for develop)
+  line-height: 56px;
+  font-family: "Pierson", sans-serif;
+  @media (max-width: 767px) {
+    font-size: 2.1875rem; //35px
+  }
+  &.sub-heading {
+    font-size: 2.3125rem; //37px
+    @media (max-width: 767px) {
+      font-size: 1.8125rem; //29px
+    }
+  }
+}
+h2 {
+  font-size: 2.625rem; //42px
+  font-weight: 300;
+  @media (max-width: 767px) {
+    font-size: 1.5rem; //24px
+  }
+}
+h3 {
+  font-size: 1.8125rem; //29px
+  line-height: 35px;
+  font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 1.415rem; //23px
+  }
+}
+h4 {
+  font-size: 1.625rem; //26px
+  font-weight: 300;
+  @media (max-width: 767px) {
+    font-size: 1.5rem; //24px
+  }
+}
+h5 {
+  font-size: 1.375rem; //22px
+  font-weight: 500;
+  @media (max-width: 767px) {
+    font-size: 1.25rem; //20px
+  }
+}
+h2,
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+}
+.global-x-spacing {
+  padding-right: 37px;
+  padding-left: 37px;
+
+  @media (min-width: 1024px) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

@@ -1,0 +1,38 @@
+.contact-us-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "ContactUsText"
+    "ContactUsDirectInquiries"
+    "ContactUsForm"
+    "ContactUsMap";
+
+  @screen md {
+    max-width: 1120px;
+    grid-template-areas:
+      "ContactUsText"
+      "ContactUsMap"
+      "ContactUsDirectInquiries"
+      "ContactUsForm";
+  }
+}
+
+.contact-us-text-area {
+  grid-area: ContactUsText;
+}
+
+.contact-us-map-area {
+  grid-area: ContactUsMap;
+}
+
+.contact-us-direct-inquiries-area {
+  grid-area: ContactUsDirectInquiries;
+}
+
+.contact-us-form-area {
+  grid-area: ContactUsForm;
+}
+
+.bg-direct-inquiries {
+  background-color: #f4f2f2;
+}

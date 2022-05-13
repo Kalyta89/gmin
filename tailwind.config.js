@@ -1,0 +1,67 @@
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#00556F",
+        secondary: "#C59425",
+        "dark-blue": "#004B62",
+        text: "#606060",
+        error: "#ed7c7d",
+        white: "#FFFFFF",
+        "table-unit": "#9a9a9a"
+      },
+      minWidth: {
+        "0": "0",
+        "1/4": "25%",
+        "1/2": "50%",
+        "3/4": "75%",
+        "3/5": "60%",
+        full: "100%",
+        "48": "12rem",
+      },
+      maxWidth: {
+        "52": "13rem",
+        "70": "70rem",
+        "78": "78rem",
+        "116": "29rem",
+      },
+      borderColor: (theme) => ({
+        ...theme("colors"),
+        DEFAULT: theme("colors.gray.300", "currentColor"),
+        primary: "#00556F",
+        secondary: "#C59425",
+        text: "#606060",
+        input: "#707070",
+        "dirty-blue": "#859CAD",
+        "dark-blue": "#004B62",
+        "dark-white": "#EAECF1",
+        "light-grey": "#CCD2DB",
+      }),
+      backgroundColor: {
+        secondary: "#F4F0E9",
+        primary: "#E9F0F2",
+        "secondary-grey": "#C9DCDE",
+        "dark-blue": "#00556F",
+        "light-grey": "#E7E8E9",
+        "light-grey-2": "#F5F6F7",
+        white: "#FFFFFF",
+        "protected-brown": "#F8F6F2",
+        "grow-blue": "#F2F6F7",
+        "educate-blue": "#F8F7F7",
+        "table-header": "#F4F4F4",
+      },
+      spacing: {
+        "2.5": "0.625rem",
+        "7.5": "1.875rem",
+        "9": "2.25rem",
+        "18.5": "4.625rem",
+      },
+      lineHeight: {
+        "4.5": "1.125rem",
+        "6.5": "1.625rem",
+      },
+    },
+  },
+  variants: {},
+  plugins: [],
+};

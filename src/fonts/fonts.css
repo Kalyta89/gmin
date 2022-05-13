@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Pierson";
+  src: local("Pierson"), url("./Pierson/Pierson-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url("./Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 500;
+  src: local("Lato"), url("./Lato/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  src: local("Lato"), url("./Lato/Lato-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 300;
+  src: local("Lato"), url("./Lato/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 100;
+  src: local("Lato"), url("./Lato/Lato-Thin.ttf") format("truetype");
+}

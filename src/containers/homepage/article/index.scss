@@ -1,0 +1,31 @@
+.article-container {
+  background-color: #f2f6f7;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+.media-container {
+  background: #f4f0e9;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+.latest-items-grid {
+  @media (min-width: 768px) {
+    grid-template-rows: auto 1fr 1fr;
+  }
+}
+
+.seeMoreBtn {
+  background: linear-gradient(to right, #c59425 0%, #e9b949 100%);
+  color: #ffffff;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    width: 150px;
+  }
+}
+
+.article-link-underline {
+  text-underline-offset: 2px;
+}

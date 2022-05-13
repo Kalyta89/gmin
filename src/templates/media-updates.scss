@@ -1,0 +1,30 @@
+.media-updates-video-container {
+  padding-bottom: 56.25%;
+  width: 100%;
+  position: relative;
+  box-shadow: 10px 10px 10px #00000029;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.media-updates-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.media-updates-title-container {
+  background-color: rgba(233, 240, 242, 0.6);
+}
+
+.font-media-updates-author {
+  font-size: 1.125rem; //18px
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.back-link {
+  text-underline-offset: 2px;
+}

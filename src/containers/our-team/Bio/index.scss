@@ -1,0 +1,11 @@
+.bio-container {
+  margin-top: -150px;
+  .bio-image-container {
+    @media (min-width: 1024px) {
+      height: 407px;
+      width: 325px;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+  }
+}

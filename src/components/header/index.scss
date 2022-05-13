@@ -1,0 +1,215 @@
+.header-main {
+  transition: background 0.3s;
+  &.shadow {
+    box-shadow: 5px 5px 10px #00000029;
+  }
+  &.active-nav {
+    @media (max-width: 1023px) {
+      min-height: 100vh;
+      position: fixed;
+      z-index: 999;
+      background-color: rgba(96, 96, 96, 0.5) !important;
+      backdrop-filter: blur(10px);
+      .logo-wrapper {
+        background-color: white;
+        min-height: 80px;
+      }
+      nav {
+        width: 75%;
+        margin-top: 80px;
+        background: #e9f0f2;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .link-item {
+    position: relative;
+    @media (max-width: 1023px) {
+      background-color: white;
+    }
+    .arrow-right {
+      transform: rotate(-90deg);
+    }
+    &.language-toggle {
+      background-color: transparent;
+    }
+
+    &.link {
+      color: var(--color_s);
+
+      @media (min-width: 1024px) {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: 0px;
+          width: 100%;
+          height: 4px;
+          background-color: var(--color_s);
+        }
+      }
+    }
+
+    &:not(.link) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 4px;
+        background-color: var(--color_s);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.25s all ease-in-out;
+      }
+      @media (min-width: 1024px) {
+        &:hover::after {
+          opacity: 1;
+          visibility: visible;
+          bottom: -4px;
+        }
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .dropdown {
+        display: none;
+        width: fit-content;
+        white-space: nowrap;
+      }
+      &:hover {
+        .dropdown {
+          display: block;
+        }
+      }
+    }
+    .dropdown-content {
+      margin-top: 4px;
+      .dropdown-active {
+        color: var(--color_s);
+        background-color: #f4f0e9;
+      }
+    }
+    .item {
+      padding: 10px 0;
+      @media (min-width: 1024px) {
+        padding: 30px 0;
+      }
+      img {
+        width: 14px;
+      }
+    }
+  }
+
+  .active {
+    border-bottom: 4px solid #c59425;
+    .item {
+      padding-bottom: 26px;
+    }
+  }
+}
+.header-main:hover {
+  background-color: white;
+  transition: background 0.3s;
+}
+
+.navbarToggleIcon {
+  height: 4px;
+  width: 42px;
+  background-color: #606060;
+  border-radius: 99px;
+  position: relative;
+  transform: translateY(-6px);
+
+  &::after {
+    content: "";
+    top: 10px;
+    right: 0px;
+    position: absolute;
+    height: 4px;
+    width: 32px;
+    background-color: #606060;
+    border-radius: 99px;
+  }
+}
+
+.navbar-search-field {
+  background-color: transparent;
+  border-bottom: 1px solid #606060;
+  outline: none;
+  transition: 0.25s;
+  width: -webkit-fill-available;
+  @media (min-width: 1024px) {
+    width: 180px;
+    &.inactive {
+      width: 0px;
+    }
+  }
+}
+
+.navbar-search-icon {
+  fill: var(--color_p);
+  transition: 0.25s;
+  @media (min-width: 1024px) {
+    &.inactive {
+      fill: var(--color_p);
+    }
+  }
+}
+
+.link-item {
+  position: relative;
+  .langDropDown {
+    background-color: #fff;
+    flex-direction: column;
+    @media (min-width: 1024px) {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0px;
+      padding-top: 8px;
+    }
+
+    .lang {
+      padding: 6px 44px 6px 12px;
+    }
+  }
+  @media (min-width: 1024px) {
+    &:hover {
+      .langDropDown {
+        display: flex;
+      }
+    }
+  }
+}
+
+.top-stocks-bar {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #f4f2f2;
+}
+
+.top-stocks-bar-values {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.top-stocks-bar-labels {
+  margin-left: 28px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.top-stocks-bar-right {
+  margin-right: 28px;
+  text-align: right;
+}

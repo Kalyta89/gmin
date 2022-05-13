@@ -1,0 +1,18 @@
+.get-in-touch-wrapper {
+  padding-bottom: 5rem;
+  .footer-overly {
+    width: 100%;
+    background-color: #e9f0f2;
+  }
+}
+.see-button {
+  background: linear-gradient(to right, #c59425 0%, #e9b949 100%);
+  color: #f3cdcd;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.input {
+  border-bottom: 1px solid var(--color_p);
+}

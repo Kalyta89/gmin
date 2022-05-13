@@ -1,0 +1,17 @@
+.hero-container {
+  background: linear-gradient(180deg, #00556f, #0a4253);
+  height: 100vh;
+
+  .hero-image {
+    background-size: cover;
+    background-position: center center;
+
+    height: 50%;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+      height: 100%;
+      width: 50%;
+    }
+  }
+}

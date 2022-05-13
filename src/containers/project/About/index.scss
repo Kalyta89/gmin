@@ -1,0 +1,46 @@
+.container-content {
+  max-width: 740px;
+  background-color: #ffffff;
+}
+.wrapper {
+  background-color: #f4f0e9;
+}
+
+.react-tabs__tab {
+  @apply cursor-pointer list-none text-secondary w-48 mb-3 whitespace-no-wrap underline;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-underline-offset: 2px;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+  width: 100%;
+}
+
+.tabs-grid {
+  display: block;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 192px minmax(500px, 740px);
+    grid-template-areas:
+      "TabList TabPanel";
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: 192px auto auto;
+    grid-template-areas: "TabList . TabPanel";
+  }
+}
+
+.grid-tab-list-area {
+  grid-area: TabList;
+}
+
+.grid-tab-panel-area {
+  grid-area: TabPanel;
+}

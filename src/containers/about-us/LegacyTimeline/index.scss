@@ -1,0 +1,197 @@
+.timeline-container {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: var(--color_s_2);
+    height: calc(100% - 395px);
+
+    width: 1px;
+    position: absolute;
+    top: 192px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-event {
+    justify-content: center;
+    display: flex;
+
+    .event-container {
+      padding: 0px 37px 36px 37px;
+      position: relative;
+      width: 100%;
+      background-color: #fff;
+
+      @media (min-width: 1024px) {
+        background-color: transparent;
+      }
+
+      @media (min-width: 768px) {
+        width: 50%;
+        padding: 0px 36px 36px 36px;
+      }
+
+      .event-detail {
+        border-radius: 5px;
+        padding: 22px 36px;
+        padding-bottom: 38px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        text-align: center;
+      }
+
+      .event-icon {
+        position: absolute;
+        margin-top: -10px;
+        width: 65px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .event-line {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0px;
+          background-color: transparent;
+          border: 1px solid transparent;
+          border-radius: 50%;
+          height: 10px;
+          width: 10px;
+        }
+
+        display: none;
+        height: 1px;
+        width: 80px;
+        background-color: transparent;
+        position: absolute;
+        top: calc(50% - 18px);
+
+        @media (min-width: 1024px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .event-right {
+    .event-container {
+      margin-bottom: 60px;
+      background-color: #fff;
+    }
+    @media (min-width: 1024px) {
+      justify-content: flex-end;
+
+      .event-container {
+        padding-left: 108px;
+        margin-bottom: 0px;
+        background-color: transparent;
+
+        .event-detail {
+          padding-left: 48px;
+          align-items: flex-start;
+          padding-bottom: 22px;
+          text-align: left;
+        }
+
+        .event-icon {
+          left: 108px;
+          top: calc(50% - 18px);
+          transform: translate(-50%, -50%);
+        }
+
+        .event-line {
+          left: 0px;
+          background-color: var(--color_s_2);
+          &::before {
+            left: 0px;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border: 1px solid var(--color_s_2);
+          }
+        }
+      }
+    }
+  }
+
+  .event-left {
+    .event-container {
+      margin-bottom: 60px;
+      background-color: #fff;
+    }
+    @media (min-width: 1024px) {
+      justify-content: flex-start;
+      .event-container {
+        padding-right: 108px;
+        margin-bottom: 0px;
+        background-color: transparent;
+
+        .event-detail {
+          padding-right: 48px;
+          align-items: flex-end;
+          padding-bottom: 22px;
+          text-align: end;
+        }
+
+        .event-icon {
+          left: 100%;
+          top: calc(50% - 18px);
+          transform: translate(calc(-50% - 108px), -50%);
+        }
+
+        .event-line {
+          right: 0px;
+
+          background-color: var(--color_s_2);
+          &::before {
+            right: 0px;
+            transform: translate(50%, -50%);
+            background-color: #fff;
+            border: 1px solid var(--color_s_2);
+          }
+        }
+      }
+    }
+  }
+
+  .first-event {
+    .event-container {
+      margin-bottom: 60px;
+    }
+  }
+
+  .last-event {
+    @media (min-width: 1024px) {
+      .event-container {
+        margin-top: 60px;
+        padding-bottom: 0px;
+        padding-top: 36px;
+
+        .event-detail {
+          padding-top: 38px;
+        }
+
+        .event-icon {
+          top: 36px;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+.history-color-1 {
+  background-color: #f4f0e9;
+}
+
+.history-color-2 {
+  background-color: #e9f0f2;
+}
+
+.history-color-3 {
+  background-color: #f4f2f2;
+}

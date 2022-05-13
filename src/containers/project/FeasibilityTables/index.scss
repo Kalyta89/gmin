@@ -1,0 +1,673 @@
+.feasibility-wrapper {
+  min-width: 500px;
+}
+
+.feasibility-grid-area {
+  display: grid;
+  grid-template-columns:
+    minmax(auto, 145px)
+    minmax(auto, 100px)
+    minmax(auto, 105px)
+    minmax(auto, 110px)
+    minmax(auto, 95px)
+    minmax(auto, 120px);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "FeasibilityTopBorderTable FeasibilityTopBorderTable FeasibilityTopBorderTable FeasibilityTopBorderTable FeasibilityTopBorderTable FeasibilityTopBorderTable"
+    "ScenarioGoldPriceTitle ScenarioGoldPriceTitle FeasibilityDownSide FeasibilityBase FeasibilitySpot FeasibilityUpside"
+    "GoldPriceName GoldPriceCurrency GoldFirstPrice GoldSecondPrice GoldThirdPrice GoldFourthPrice"
+    "AfterTaxNPV AfterTaxNPVCurrency AfterTaxNPVFirstPrice AfterTaxNPVSecondPrice AfterTaxNPVThirdPrice AfterTaxNPVFourthPrice"
+    "AfterTaxIRR AfterTaxIRRPercent AfterTaxIRRFirstPercent AfterTaxIRRSecondPercent AfterTaxIRRThirdPercent AfterTaxIRRFourthPercent"
+    "LomFreeCashFlow LomFreeCashFlowCurrency LomFreeCashFlowFirstPrice LomFreeCashFlowSecondPrice LomFreeCashFlowThirdPrice LomFreeCashFlowFourthPrice"
+    "LOMEbitda LOMEbitdaCurrency LOMEbitdaFirstPrice LOMEbitdaSecondPrice LOMEbitdaThirdPrice LOMEbitdaFourthPrice"
+    "PaybackPeriod PaybackPeriodUnit PaybackPeriodFirstYear PaybackPeriodSecondYear PaybackPeriodThirdYear PaybackPeriodFourthYear";
+}
+
+.grid-feasibility-top-border-table-area {
+  grid-area: FeasibilityTopBorderTable;
+}
+
+.grid-scenario-gold-price-title-area {
+  grid-area: ScenarioGoldPriceTitle;
+}
+
+.grid-feasibility-down-side-area {
+  grid-area: FeasibilityDownSide;
+}
+
+.grid-feasibility-base-area {
+  grid-area: FeasibilityBase;
+}
+
+.grid-feasibility-spot-area {
+  grid-area: FeasibilitySpot;
+}
+
+.grid-feasibility-upside-area {
+  grid-area: FeasibilityUpside;
+}
+
+.grid-gold-price-name-area {
+  grid-area: GoldPriceName;
+}
+
+.grid-gold-price-currency-area {
+  grid-area: GoldPriceCurrency;
+}
+
+.grid-gold-first-price-area {
+  grid-area: GoldFirstPrice;
+}
+
+.grid-gold-second-price-area {
+  grid-area: GoldSecondPrice;
+}
+
+.grid-gold-third-price-area {
+  grid-area: GoldThirdPrice;
+}
+
+.grid-gold-fourth-price-area {
+  grid-area: GoldFourthPrice;
+}
+
+.grid-after-tax-npv-area {
+  grid-area: AfterTaxNPV;
+}
+
+.grid-after-tax-npv-currency-area {
+  grid-area: AfterTaxNPVCurrency;
+}
+
+.grid-after-tax-npv-first-price-area {
+  grid-area: AfterTaxNPVFirstPrice;
+}
+
+.grid-after-tax-npv-second-price-area {
+  grid-area: AfterTaxNPVSecondPrice;
+}
+
+.grid-after-tax-npv-third-price-area {
+  grid-area: AfterTaxNPVThirdPrice;
+}
+
+.grid-after-tax-npv-fourth-price-area {
+  grid-area: AfterTaxNPVFourthPrice;
+}
+
+.grid-after-tax-irr-area {
+  grid-area: AfterTaxIRR;
+}
+
+.grid-after-tax-irr-percent-area {
+  grid-area: AfterTaxIRRPercent;
+}
+
+.grid-after-tax-irr-first-percent-area {
+  grid-area: AfterTaxIRRFirstPercent;
+}
+
+.grid-after-tax-irr-second-percent-area {
+  grid-area: AfterTaxIRRSecondPercent;
+}
+
+.grid-after-tax-irr-third-percent-area {
+  grid-area: AfterTaxIRRThirdPercent;
+}
+.grid-after-tax-irr-fourth-percent-area {
+  grid-area: AfterTaxIRRFourthPercent;
+}
+
+.grid-lom-free-cash-flow-area {
+  grid-area: LomFreeCashFlow;
+}
+
+.grid-lom-free-cash-flow-currency-area {
+  grid-area: LomFreeCashFlowCurrency;
+}
+
+.grid-lom-free-cash-flow-first-price-area {
+  grid-area: LomFreeCashFlowFirstPrice;
+}
+
+.grid-lom-free-cash-flow-second-price-area {
+  grid-area: LomFreeCashFlowSecondPrice;
+}
+
+.grid-lom-free-cash-flow-third-price-area {
+  grid-area: LomFreeCashFlowThirdPrice;
+}
+
+.grid-lom-free-cash-flow-fourth-price-area {
+  grid-area: LomFreeCashFlowFourthPrice;
+}
+
+.grid-lom-ebitda-area {
+  grid-area: LOMEbitda;
+}
+
+.grid-lom-ebitda-currency-area {
+  grid-area: LOMEbitdaCurrency;
+}
+
+.grid-lom-ebitda-first-price-area {
+  grid-area: LOMEbitdaFirstPrice;
+}
+
+.grid-lom-ebitda-second-price-area {
+  grid-area: LOMEbitdaSecondPrice;
+}
+
+.grid-lom-ebitda-third-price-area {
+  grid-area: LOMEbitdaThirdPrice;
+}
+
+.grid-lom-ebitda-fourth-price-area {
+  grid-area: LOMEbitdaFourthPrice;
+}
+
+.grid-payback-period-area {
+  grid-area: PaybackPeriod;
+}
+
+.grid-payback-period-unit-area {
+  grid-area: PaybackPeriodUnit;
+}
+
+.grid-payback-period-first-year-area {
+  grid-area: PaybackPeriodFirstYear;
+}
+
+.grid-payback-period-second-year-area {
+  grid-area: PaybackPeriodSecondYear;
+}
+
+.grid-payback-period-third-year-area {
+  grid-area: PaybackPeriodThirdYear;
+}
+
+.grid-payback-period-fourth-year-area {
+  grid-area: PaybackPeriodFourthYear;
+}
+
+.feasibility-second-table-grid-area {
+  display: grid;
+  grid-template-columns:
+    minmax(auto, 140px)
+    minmax(95px, 105px)
+    minmax(110px, 125px)
+    minmax(auto, 100px)
+    minmax(auto, 70px)
+    minmax(auto, 140px);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "Description Description Description DescriptionUnits DescriptionEmpty DescriptionValue"
+    "ProductionData ProductionData ProductionData ProductionData ProductionData ProductionData"
+    "MineLife MineLife MineLife MineLifeUnit . MineLifeValue"
+    "MillThroughput MillThroughput MillThroughput MillThroughputUnit . MillThroughputValue"
+    "MillThroughputSecond MillThroughputSecond MillThroughputSecond MillThroughputSecondUnit . MillThroughputSecondValue"
+    "StripRatio StripRatio StripRatio StripRatioUnit . StripRatioValue"
+    "PreStripTonnage PreStripTonnage PreStripTonnage PreStripTonnageUnit . PreStripTonnageValue"
+    "TotalTonnage TotalTonnage TotalTonnage TotalTonnageUnit . TotalTonnageValue"
+    "OneTonnageMilled OneTonnageMilled OneTonnageMilled OneTonnageMilledUnit . OneTonnageMilledValue"
+    "GoldHeadGrade GoldHeadGrade GoldHeadGrade GoldHeadGradeUnit . GoldHeadGradeValue"
+    "ContainedGold ContainedGold ContainedGold ContainedGoldUnit . ContainedGoldValue"
+    "Recovery Recovery Recovery RecoveryUnit . RecoveryValue"
+    "TotalGoldProduction TotalGoldProduction TotalGoldProduction TotalGoldProductionUnit . TotalGoldProductionValue"
+    "AverageAnnualGold AverageAnnualGold AverageAnnualGold AverageAnnualGoldUnit . AverageAnnualGoldValue"
+    "FirstFiveFullYears FirstFiveFullYears FirstFiveFullYears FirstFiveFullYearsUnit . FirstFiveFullYearsValue"
+    "OperatingCosts OperatingCosts OperatingCosts OperatingCosts OperatingCosts OperatingCosts"
+    "MiningCostsFirst MiningCostsFirst MiningCostsFirst MiningCostsFirstUnit . MiningCostsFirstValue"
+    "MiningCostsSecond MiningCostsSecond MiningCostsSecond MiningCostsSecondUnit . MiningCostsSecondValue"
+    "ProcessingCost ProcessingCost ProcessingCost ProcessingCostUnit . ProcessingCostValue"
+    "GACost GACost GACost GACostUnit . GACostValue"
+    "TotalSiteCostsFirst TotalSiteCostsFirst TotalSiteCostsFirst TotalSiteCostsFirstUnit . TotalSiteCostsFirstValue"
+    "TotalSiteCostsSecond TotalSiteCostsSecond TotalSiteCostsSecond TotalSiteCostsSecondUnit . TotalSiteCostsSecondValue"
+    "TotalOperatingCosts TotalOperatingCosts TotalOperatingCosts TotalOperatingCostsUnit . TotalOperatingCostsValue"
+    "AISC AISC AISC AISCUnit . AISCValue"
+    "CapitalCosts CapitalCosts CapitalCosts CapitalCosts CapitalCosts CapitalCosts"
+    "InitialCapital InitialCapital InitialCapital InitialCapitalUnit . InitialCapitalValue"
+    "SustainingCapital SustainingCapital SustainingCapital SustainingCapitalUnit . SustainingCapitalValue"
+    "ClosureCosts ClosureCosts ClosureCosts ClosureCostsUnit . ClosureCostsValue"
+    "CapitalCostsBeforeTax CapitalCostsBeforeTax CapitalCostsBeforeTax CapitalCostsBeforeTaxUnit . CapitalCostsBeforeTaxValue"
+    "NetTaxesPayable NetTaxesPayable NetTaxesPayable NetTaxesPayableUnit . NetTaxesPayableValue"
+    "TotalCapital TotalCapital TotalCapital TotalCapitalUnit . TotalCapitalValue"
+    "FinancialEvaluation FinancialEvaluation FinancialEvaluation FinancialEvaluation FinancialEvaluation FinancialEvaluation"
+    "GoldPriceAssumption GoldPriceAssumption GoldPriceAssumption GoldPriceAssumptionUnit . GoldPriceAssumptionValue"
+    "BrlFxAssumption BrlFxAssumption BrlFxAssumption BrlFxAssumptionUnit . BrlFxAssumptionValue"
+    "AfterTaxNpvSecond AfterTaxNpvSecond AfterTaxNpvSecond AfterTaxNpvSecondUnit . AfterTaxNpvSecondValue"
+    "AfterTaxIrrSecond AfterTaxIrrSecond AfterTaxIrrSecond AfterTaxIrrSecondUnit . AfterTaxIrrSecondValue"
+    "Payback Payback Payback PaybackUnit . PaybackValue";
+}
+
+.grid-description-area {
+  grid-area: Description;
+}
+
+.grid-description-units-area {
+  grid-area: DescriptionUnits;
+}
+
+.grid-description-empty-area {
+  grid-area: DescriptionEmpty;
+}
+
+.grid-description-value-area {
+  grid-area: DescriptionValue;
+}
+
+.grid-production-data-area {
+  grid-area: ProductionData;
+}
+
+.grid-mine-life-area {
+  grid-area: MineLife;
+}
+
+.grid-mine-life-unit-area {
+  grid-area: MineLifeUnit;
+}
+
+.grid-mine-life-value-area {
+  grid-area: MineLifeValue;
+}
+
+.grid-mill-throughput-area {
+  grid-area: MillThroughput;
+}
+
+.grid-mill-throughput-unit-area {
+  grid-area: MillThroughputUnit;
+}
+
+.grid-mill-throughput-value-area {
+  grid-area: MillThroughputValue;
+}
+
+.grid-mill-throughput-second-area {
+  grid-area: MillThroughputSecond;
+}
+
+.grid-mill-throughput-second-unit-area {
+  grid-area: MillThroughputSecondUnit;
+}
+
+.grid-mill-throughput-second-value-area {
+  grid-area: MillThroughputSecondValue;
+}
+
+.grid-strip-ratio-area {
+  grid-area: StripRatio;
+}
+
+.grid-strip-ratio-unit-area {
+  grid-area: StripRatioUnit;
+}
+
+.grid-strip-ratio-value-area {
+  grid-area: StripRatioValue;
+}
+
+.grid-pre-strip-tonnage-area {
+  grid-area: PreStripTonnage;
+}
+
+.grid-pre-strip-tonnage-unit-area {
+  grid-area: PreStripTonnageUnit;
+}
+
+.grid-pre-strip-tonnage-value-area {
+  grid-area: PreStripTonnageValue;
+}
+
+.grid-total-tonnage-area {
+  grid-area: TotalTonnage;
+}
+
+.grid-total-tonnage-unit-area {
+  grid-area: TotalTonnageUnit;
+}
+
+.grid-total-tonnage-value-area {
+  grid-area: TotalTonnageValue;
+}
+
+.grid-one-tonnage-milled-area {
+  grid-area: OneTonnageMilled;
+}
+
+.grid-one-tonnage-milled-unit-area {
+  grid-area: OneTonnageMilledUnit;
+}
+
+.grid-one-tonnage-milled-value-area {
+  grid-area: OneTonnageMilledValue;
+}
+
+.grid-gold-head-grade-area {
+  grid-area: GoldHeadGrade;
+}
+
+.grid-gold-head-grade-unit-area {
+  grid-area: GoldHeadGradeUnit;
+}
+
+.grid-gold-head-grade-value-area {
+  grid-area: GoldHeadGradeValue;
+}
+
+.grid-contained-gold-area {
+  grid-area: ContainedGold;
+}
+
+.grid-contained-gold-unit-area {
+  grid-area: ContainedGoldUnit;
+}
+
+.grid-contained-gold-value-area {
+  grid-area: ContainedGoldValue;
+}
+
+.grid-recovery-area {
+  grid-area: Recovery;
+}
+
+.grid-recovery-unit-area {
+  grid-area: RecoveryUnit;
+}
+
+.grid-recovery-value-area {
+  grid-area: RecoveryValue;
+}
+
+.grid-total-gold-production-area {
+  grid-area: TotalGoldProduction;
+}
+
+.grid-total-gold-production-unit-area {
+  grid-area: TotalGoldProductionUnit;
+}
+
+.grid-total-gold-production-value-area {
+  grid-area: TotalGoldProductionValue;
+}
+
+.grid-average-annual-gold-area {
+  grid-area: AverageAnnualGold;
+}
+
+.grid-average-annual-gold-unit-area {
+  grid-area: AverageAnnualGoldUnit;
+}
+
+.grid-average-annual-gold-value-area {
+  grid-area: AverageAnnualGoldValue;
+}
+
+.grid-first-five-full-years-area {
+  grid-area: FirstFiveFullYears;
+}
+
+.grid-first-five-full-years-unit-area {
+  grid-area: FirstFiveFullYearsUnit;
+}
+
+.grid-first-five-full-years-value-area {
+  grid-area: FirstFiveFullYearsValue;
+}
+
+.grid-operating-costs-area {
+  grid-area: OperatingCosts;
+}
+
+.grid-mining-costs-first-area {
+  grid-area: MiningCostsFirst;
+}
+
+.grid-mining-costs-first-unit-area {
+  grid-area: MiningCostsFirstUnit;
+}
+
+.grid-mining-costs-first-value-area {
+  grid-area: MiningCostsFirstValue;
+}
+
+.grid-mining-costs-second-area {
+  grid-area: MiningCostsSecond;
+}
+
+.grid-mining-costs-second-unit-area {
+  grid-area: MiningCostsSecondUnit;
+}
+
+.grid-mining-costs-second-value-area {
+  grid-area: MiningCostsSecondValue;
+}
+
+.grid-processing-cost-area {
+  grid-area: ProcessingCost;
+}
+
+.grid-processing-cost-unit-area {
+  grid-area: ProcessingCostUnit;
+}
+
+.grid-processing-cost-value-area {
+  grid-area: ProcessingCostValue;
+}
+
+.grid-ga-cost-area {
+  grid-area: GACost;
+}
+
+.grid-ga-cost-unit-area {
+  grid-area: GACostUnit;
+}
+
+.grid-ga-cost-value-area {
+  grid-area: GACostValue;
+}
+
+.grid-total-site-costs-first-area {
+  grid-area: TotalSiteCostsFirst;
+}
+
+.grid-total-site-costs-first-unit-area {
+  grid-area: TotalSiteCostsFirstUnit;
+}
+
+.grid-total-site-costs-first-value-area {
+  grid-area: TotalSiteCostsFirstValue;
+}
+
+.grid-total-site-costs-second-area {
+  grid-area: TotalSiteCostsSecond;
+}
+
+.grid-total-site-costs-second-unit-area {
+  grid-area: TotalSiteCostsSecondUnit;
+}
+
+.grid-total-site-costs-second-value-area {
+  grid-area: TotalSiteCostsSecondValue;
+}
+
+.grid-total-operating-costs-area {
+  grid-area: TotalOperatingCosts;
+}
+
+.grid-total-operating-costs-unit-area {
+  grid-area: TotalOperatingCostsUnit;
+}
+
+.grid-total-operating-costs-value-area {
+  grid-area: TotalOperatingCostsValue;
+}
+
+.grid-aisc-area {
+  grid-area: AISC;
+}
+
+.grid-aisc-unit-area {
+  grid-area: AISCUnit;
+}
+
+.grid-aisc-value-area {
+  grid-area: AISCValue;
+}
+
+.grid-capital-costs-area {
+  grid-area: CapitalCosts;
+}
+
+.grid-initial-capital-area {
+  grid-area: InitialCapital;
+}
+
+.grid-initial-capital-unit-area {
+  grid-area: InitialCapitalUnit;
+}
+
+.grid-initial-capital-value-area {
+  grid-area: InitialCapitalValue;
+}
+
+.grid-sustaining-capital-area {
+  grid-area: SustainingCapital;
+}
+
+.grid-sustaining-capital-unit-area {
+  grid-area: SustainingCapitalUnit;
+}
+
+.grid-sustaining-capital-value-area {
+  grid-area: SustainingCapitalValue;
+}
+
+.grid-closure-costs-area {
+  grid-area: ClosureCosts;
+}
+
+.grid-closure-costs-unit-area {
+  grid-area: ClosureCostsUnit;
+}
+
+.grid-closure-costs-value-area {
+  grid-area: ClosureCostsValue;
+}
+
+.grid-capital-costs-before-tax-area {
+  grid-area: CapitalCostsBeforeTax;
+}
+
+.grid-capital-costs-before-tax-unit-area {
+  grid-area: CapitalCostsBeforeTaxUnit;
+}
+
+.grid-capital-costs-before-tax-value-area {
+  grid-area: CapitalCostsBeforeTaxValue;
+}
+
+.grid-net-taxes-payable-area {
+  grid-area: NetTaxesPayable;
+}
+
+.grid-net-taxes-payable-unit-area {
+  grid-area: NetTaxesPayableUnit;
+}
+
+.grid-net-taxes-payable-value-area {
+  grid-area: NetTaxesPayableValue;
+}
+
+.grid-total-capital-area {
+  grid-area: TotalCapital;
+}
+
+.grid-total-capital-unit-area {
+  grid-area: TotalCapitalUnit;
+}
+
+.grid-total-capital-value-area {
+  grid-area: TotalCapitalValue;
+}
+
+.grid-financial-evaluation-area {
+  grid-area: FinancialEvaluation;
+}
+
+.grid-gold-price-assumption-area {
+  grid-area: GoldPriceAssumption;
+}
+
+.grid-gold-price-assumption-unit-area {
+  grid-area: GoldPriceAssumptionUnit;
+}
+
+.grid-gold-price-assumption-value-area {
+  grid-area: GoldPriceAssumptionValue;
+}
+
+.grid-brl-fx-assumption-area {
+  grid-area: BrlFxAssumption;
+}
+
+.grid-brl-fx-assumption-unit-area {
+  grid-area: BrlFxAssumptionUnit;
+}
+
+.grid-brl-fx-assumption-value-area {
+  grid-area: BrlFxAssumptionValue;
+}
+
+.grid-after-tax-npv-second-area {
+  grid-area: AfterTaxNpvSecond;
+}
+
+.grid-after-tax-npv-second-unit-area {
+  grid-area: AfterTaxNpvSecondUnit;
+}
+
+.grid-after-tax-npv-second-value-area {
+  grid-area: AfterTaxNpvSecondValue;
+}
+
+.grid-after-tax-irr-second-area {
+  grid-area: AfterTaxIrrSecond;
+}
+
+.grid-after-tax-irr-second-unit-area {
+  grid-area: AfterTaxIrrSecondUnit;
+}
+
+.grid-after-tax-irr-second-value-area {
+  grid-area: AfterTaxIrrSecondValue;
+}
+
+.grid-payback-area {
+  grid-area: Payback;
+}
+
+.grid-payback-unit-area {
+  grid-area: PaybackUnit;
+}
+
+.grid-payback-value-area {
+  grid-area: PaybackValue;
+}
+
+.feasibility-button {
+  background: linear-gradient(to right, #0a4354 0%, #00556f 100%);
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 8px;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 450px;
+  }
+  @media (min-width: 1024px) {
+    width: 550px;
+  }
+}

@@ -1,0 +1,43 @@
+.overview-grid {
+  display: grid;
+  grid-template-areas:
+    "OverviewTitle"
+    "OverviewText"
+    "OverviewImages"
+    "OverviewButton";
+  @screen md {
+    grid-template-columns: minmax(349px, 516px) 20px minmax(350px, 455px);
+    grid-template-areas:
+      "OverviewTitle . ."
+      "OverviewText . OverviewImages"
+      "OverviewButton . .";
+  }
+  @screen lg {
+    grid-template-columns: minmax(516px, 550px) minmax(20px, 116px) 455px;
+    grid-template-areas:
+      "OverviewTitle . ."
+      "OverviewText . OverviewImages"
+      "OverviewButton . .";
+  }
+}
+
+.overview-title-area {
+  grid-area: OverviewTitle;
+}
+
+.overview-text-area {
+  grid-area: OverviewText;
+}
+
+.overview-images-area {
+  grid-area: OverviewImages;
+}
+
+.overview-button-area {
+  grid-area: OverviewButton;
+}
+
+.overview-button-background {
+  background: linear-gradient(to right, #164253, #1d556f);
+  box-shadow: 1px 1px 8px 0px rgba(27, 27, 27, 0.4);
+}

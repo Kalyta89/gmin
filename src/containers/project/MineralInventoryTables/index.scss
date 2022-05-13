@@ -1,0 +1,180 @@
+.mineral-resources-wrapper {
+  min-width: 400px;
+
+  @screen md {
+    min-width: 500px;
+  }
+}
+
+.mineral-reserves-grid-area {
+  display: grid;
+  grid-template-columns:
+    minmax(auto, 230px)
+    minmax(auto, 145px)
+    minmax(auto, 130px)
+    minmax(auto, 173px);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "ReservesTitle TonnageTitle GradeTitle ContainedTitle"
+    "Proven ProvenTonnage ProvenGrade ProvenContained"
+    "Probable ProbableTonnage ProbableGrade ProbableContained"
+    "TotalReserves TotalReservesTonnage TotalReservesGrade TotalReservesContained";
+}
+.mineral-reserves-grid-reserves-title-area {
+  grid-area: ReservesTitle;
+}
+
+.mineral-reserves-grid-tonnage-title-area {
+  grid-area: TonnageTitle;
+}
+
+.mineral-reserves-grid-grade-title-area {
+  grid-area: GradeTitle;
+}
+
+.mineral-reserves-grid-contained-title-area {
+  grid-area: ContainedTitle;
+}
+
+.mineral-reserves-grid-proven-area {
+  grid-area: Proven;
+}
+
+.mineral-reserves-grid-proven-tonnage-area {
+  grid-area: ProvenTonnage;
+}
+
+.mineral-reserves-grid-proven-grade-area {
+  grid-area: ProvenGrade;
+}
+
+.mineral-reserves-grid-proven-contained-area {
+  grid-area: ProvenContained;
+}
+
+.mineral-reserves-grid-probable-area {
+  grid-area: Probable;
+}
+
+.mineral-reserves-grid-probable-tonnage-area {
+  grid-area: ProbableTonnage;
+}
+
+.mineral-reserves-grid-probable-grade-area {
+  grid-area: ProbableGrade;
+}
+
+.mineral-reserves-grid-probable-contained-area {
+  grid-area: ProbableContained;
+}
+
+.mineral-reserves-grid-total-reserves-area {
+  grid-area: TotalReserves;
+}
+
+.mineral-reserves-grid-total-reserves-tonnage-area {
+  grid-area: TotalReservesTonnage;
+}
+
+.mineral-reserves-grid-total-reserves-grade-area {
+  grid-area: TotalReservesGrade;
+}
+
+.mineral-reserves-grid-total-reserves-contained-area {
+  grid-area: TotalReservesContained;
+}
+
+.mineral-resources-grid-area {
+  display: grid;
+  grid-template-columns:
+    minmax(auto, 230px)
+    minmax(auto, 145px)
+    minmax(auto, 130px)
+    minmax(auto, 173px);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "ResoursesTitle ResoursesTonnageTitle ResoursesGradeTitle ResoursesContainedTitle"
+    "Measured MeasuredTonnage MeasuredGrade MeasuredContained"
+    "Indicated IndicatedTonnage IndicatedGrade IndicatedContained"
+    "TotalMI TotalMITonnage TotalMIGrade TotalMIContained"
+    "Inferred InferredTonnage InferredGrade InferredContained";
+}
+.mineral-resources-grid-resourses-title-area {
+  grid-area: ResoursesTitle;
+}
+
+.mineral-resources-grid-resourses-tonnage-title-area {
+  grid-area: ResoursesTonnageTitle;
+}
+
+.mineral-resources-grid-resourses-grade-title-area {
+  grid-area: ResoursesGradeTitle;
+}
+
+.mineral-resources-grid-resourses-contained-title-area {
+  grid-area: ResoursesContainedTitle;
+}
+
+.mineral-resources-grid-measured-area {
+  grid-area: Measured;
+}
+
+.mineral-resources-grid-measured-tonnage-area {
+  grid-area: MeasuredTonnage;
+}
+
+.mineral-resources-grid-measured-grade-area {
+  grid-area: MeasuredGrade;
+}
+
+.mineral-resources-grid-measured-contained-area {
+  grid-area: MeasuredContained;
+}
+
+.mineral-resources-grid-indicated-area {
+  grid-area: Indicated;
+}
+
+.mineral-resources-grid-indicated-tonnage-area {
+  grid-area: IndicatedTonnage;
+}
+
+.mineral-resources-grid-indicated-grade-area {
+  grid-area: IndicatedGrade;
+}
+
+.mineral-resources-grid-indicated-contained-area {
+  grid-area: IndicatedContained;
+}
+
+.mineral-resources-grid-total-mi-area {
+  grid-area: TotalMI;
+}
+
+.mineral-resources-grid-total-mi-tonnage-area {
+  grid-area: TotalMITonnage;
+}
+
+.mineral-resources-grid-total-mi-grade-area {
+  grid-area: TotalMIGrade;
+}
+
+.mineral-resources-grid-total-mi-contained-area {
+  grid-area: TotalMIContained;
+}
+
+.mineral-resources-grid-inferred-area {
+  grid-area: Inferred;
+}
+
+.mineral-resources-grid-inferred-tonnage-area {
+  grid-area: InferredTonnage;
+}
+
+.mineral-resources-grid-inferred-grade-area {
+  grid-area: InferredGrade;
+}
+
+.mineral-resources-grid-inferred-contained-area {
+  grid-area: InferredContained;
+}

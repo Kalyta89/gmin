@@ -1,0 +1,24 @@
+.custom-border {
+  -webkit-text-stroke: 0.25px #00556f;
+}
+
+.marketing-position-title-width {
+  @media (min-width: 768px) {
+    width: 148px;
+  } 
+}
+
+.marketing-position-width {
+  @media (min-width: 768px) {
+    width: 175px;
+  } 
+}
+
+.font-roman-numerals {
+  font-size: 3.25rem; //52px (for develop)
+  line-height: 56px;
+  font-family: "Pierson", sans-serif;
+  @media (max-width: 767px) {
+    font-size: 2.1875rem; //35px
+  }
+}

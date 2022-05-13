@@ -1,0 +1,50 @@
+.input-wrapper {
+  display: flex;
+  @media (max-width: 1200px) {
+    display: block;
+  }
+}
+
+.input-color {
+  &::placeholder {
+    color: #606060;
+  }
+}
+
+.input-error-color {
+  &::placeholder {
+    color: #ed7c7d;
+  }
+}
+
+.input-classes {
+  &::placeholder {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+.input-label {
+  margin-right: 30px;
+  font-size: 15px;
+  text-align: right;
+  width: 170px;
+  align-items: center;
+  opacity: 0.5;
+}
+.rounded-input {
+  height: 44px;
+  border-radius: 14px;
+  margin-top: 0px;
+  @media (max-width: 1200px) {
+    margin-top: 6px;
+  }
+  &::placeholder {
+    font-size: 14px;
+    font-style: italic;
+    color: #3e3e3e;
+    opacity: 0.5;
+  }
+}

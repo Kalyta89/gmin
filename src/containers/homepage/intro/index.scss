@@ -1,0 +1,38 @@
+.intro-link-underline {
+  text-underline-offset: 2px;
+}
+
+.video {
+  box-shadow: 10px 10px 10px #00000029;
+  border-radius: 8px;
+  opacity: 1;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  width: 455px;
+  height: 256px;
+
+  @media (max-width: 1024px) {
+    width: 350px;
+    height: 196px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 365px;
+  }
+
+  @media (max-width: 550px) {
+    height: 256px;
+  }
+  
+  @media (max-width: 450px) {
+    height: 196px;
+  }
+}
+
+.intro-video-container {
+  width: min-content;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,53 @@
+.story-container {
+  background-color: #e9f0f2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @screen lg {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .out-story-grid {
+    display: grid;
+    grid-template-areas:
+      "OutStoryTitle"
+      "OutStoryText"
+      "OutStoryImages"
+      "OutStoryButton";
+    @screen md {
+      grid-template-columns: minmax(349px, 516px) 20px minmax(350px, 455px);
+      grid-template-areas:
+        "OutStoryTitle . OutStoryImages"
+        "OutStoryText . OutStoryImages"
+        "OutStoryButton . .";
+    }
+    @screen lg {
+      grid-template-columns: minmax(516px, 550px) minmax(20px, 116px) 455px;
+      grid-template-areas:
+        "OutStoryTitle . OutStoryImages"
+        "OutStoryText . OutStoryImages"
+        "OutStoryButton . .";
+    }
+    .our-story-image-container {
+      @media (min-width: 1024px) {
+        height: 451px;
+        width: 455px;
+        overflow: hidden;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .outStory-title-area {
+    grid-area: OutStoryTitle;
+  }
+
+  .outStory-text-area {
+    grid-area: OutStoryText;
+  }
+
+  .outStory-images-area {
+    grid-area: OutStoryImages;
+  }
+}

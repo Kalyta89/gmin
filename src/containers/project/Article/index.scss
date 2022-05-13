@@ -1,0 +1,14 @@
+.disc-bullet {
+  display: inline-flex;
+  align-items: flex-start;
+  &::before {
+    content: "";
+    height: 7px;
+    width: 7px;
+    border: 1px solid gray;
+    display: block;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-right: 8px;
+  }
+}

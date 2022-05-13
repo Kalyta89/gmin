@@ -1,0 +1,20 @@
+.phone-input .flag-dropdown {
+  display: none;
+}
+
+.phone-input .special-label {
+  display: none;
+}
+
+.phone-input .form-control {
+  border-color: var(--border-color);
+  &::placeholder {
+    color: var(--text);
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+  @apply bg-transparent text-sm pb-1 pl-2 outline-none w-full border-b;
+}

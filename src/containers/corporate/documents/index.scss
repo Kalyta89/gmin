@@ -1,0 +1,13 @@
+.documents-container {
+  background-color: #e9f0f2;
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  @media (min-width: 1024px) {
+    padding-top: 95px;
+    padding-bottom: 90px;
+  }
+}
+.documents-underline-offset {
+  text-underline-offset: 2px;
+}
